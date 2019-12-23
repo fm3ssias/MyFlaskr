@@ -24,10 +24,10 @@ def create_app(test_config=None):
         pass
 
     # Uma simples pagina que diz oi
-    @app.route('/')
+    '''@app.route('/')
     def hello():
         return "Hello, Friend"
-
+    '''
     from . import db
     db.init_app(app)
 
